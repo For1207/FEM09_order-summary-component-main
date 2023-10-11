@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --pure-white: hsl(0, 0%, 100%);
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  color: var(--desaturated-blue)
+}
+
+body {
+  background-color: var(--very-pale-blue);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Desktop styles */
+.container {
+  width: 28.125rem;
+  height: 43.5625rem;
+  margin: 6.375rem auto 0;
+  background-color: var(--pure-white);
+  border-radius: 1.25rem;
+}
+
+.header img {
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+main {
+  padding: 3rem;
+  height: 29.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+h1, h3 {
+  color: var(--dark-blue);
+}
+
+.plan {
+  height: 6.125rem;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.6875rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.plan-price {
+  width: 50%;
+  text-align: left;
+}
+
+.plan a, .payment a, .cancel a {
+  font-size: 0.875rem;
+  color: var(--bright-blue)
+}
+
+.payment {
+  background-color: var(--bright-blue);
+  border-radius: 0.6875rem;
+  padding: 0.906rem 0;
+  color: var(--pure-white);
+}
+
+
+a, .payment {
+  cursor: pointer;
+}
+
+.cancel a {
+  text-decoration: none;
+}
+
+.cancel a {
+  color: var(--desaturated-blue);
+}
+
+
+.plan a:hover {
+  text-decoration: none;
+}
+
+.payment:hover {
+  background-color: hsl(245, 83%, 68%);
+}
+
+.cancel a:hover {
+  color: var(--dark-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attr { 
+  font-size: 11px; text-align: center; 
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.attr a { 
+  color: var(--desaturated-blue);
+  font-weight: 700;
+}
